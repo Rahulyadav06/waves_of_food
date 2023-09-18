@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.wavesoffood.databinding.ActivityMainBinding
+import com.example.wavesoffood.fragment.NotificationBottomFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -16,5 +17,9 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragmentContainerView)
         var bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNav.setupWithNavController(navController)
+        binding.notificationButton.setOnClickListener {
+            val bottomNotifications = NotificationBottomFragment()
+            bottomNotifications.show(supportFragmentManager,"show")
+        }
     }
 }

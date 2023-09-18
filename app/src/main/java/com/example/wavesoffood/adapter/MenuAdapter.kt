@@ -14,7 +14,6 @@ class MenuAdapter(private val menuItemsNames: MutableList<String>, private val m
                 menuFoodImage.setImageResource(menuItemsImages[position])
             }
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
