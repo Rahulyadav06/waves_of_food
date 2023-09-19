@@ -14,8 +14,9 @@
             android:id="@+id/menuBackButton"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="16dp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="32dp"
+            android:scaleType="centerCrop"
+            android:layout_height="32dp"
             android:background="@android:color/transparent"
             android:src="@drawable/baseline_arrow_circle_left_24" />
 
